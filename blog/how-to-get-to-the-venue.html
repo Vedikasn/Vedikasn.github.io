@@ -22,6 +22,167 @@
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
     <script src="../javascripts/all.js"></script><script src="../javascripts/jquery.jcountdown1.3.3.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB1-ui10v9I5nVSxUkDbcRl7AK6Ao8e7Dw&amp;sensor=true"></script>
+    <script type="text/javascript">
+      function initialize() {
+        var srcc = new google.maps.LatLng(28.6896306,77.2041964);
+        
+        var center = new google.maps.LatLng(28.6896259,77.2063851);
+        var myOptions = {
+          zoom: 11,
+          center: center,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false,
+          styles: [
+            {
+                "featureType": "all",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#071428"
+                    },
+                    {
+                        "weight": 2
+                    },
+                    {
+                        "gamma": 0.84
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "weight": 0.6
+                    },
+                    {
+                        "color": "#232f42"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#232f42"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#243042"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#232f42"
+                    },
+                    {
+                        "lightness": "2"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#293a4b"
+                    },
+                    {
+                        "lightness": "1"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#232f42"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#071427"
+                    }
+                ]
+            }
+          ]
+        }
+
+        var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+
+      
+
+        var image2 = new google.maps.MarkerImage(
+          'images/marker-images/image2.png',
+          new google.maps.Size(80,84),
+          new google.maps.Point(0,0),
+          new google.maps.Point(28,61),
+          new google.maps.Size(80,84)
+        );
+
+        var shape = {
+          coord: [32,0,36,1,39,2,40,3,42,4,44,5,45,6,46,7,47,8,48,9,49,10,49,11,50,12,51,13,51,14,52,15,52,16,53,17,53,18,53,19,54,20,54,21,54,22,54,23,54,24,54,25,54,26,54,27,54,28,54,29,54,30,54,31,54,32,54,33,54,34,53,35,53,36,53,37,52,38,52,39,51,40,51,41,50,42,49,43,49,44,48,45,47,46,46,47,45,48,43,49,42,50,40,51,38,52,36,53,34,54,33,55,32,56,31,57,31,58,30,59,29,60,28,60,27,59,26,58,25,57,25,56,24,55,23,54,19,53,16,52,14,51,13,50,11,49,10,48,9,47,8,46,7,45,6,44,5,43,5,42,4,41,3,40,3,39,3,38,2,37,2,36,1,35,1,34,1,33,1,32,1,31,0,30,0,29,0,28,0,27,0,26,0,25,0,24,1,23,1,22,1,21,1,20,1,19,2,18,2,17,2,16,3,15,3,14,4,13,5,12,5,11,6,10,7,9,8,8,9,7,10,6,11,5,12,4,14,3,16,2,19,1,22,0,32,0],
+          type: 'poly'
+        };
+
+        var marker = new google.maps.Marker({
+          icon: image2,
+          shape: shape,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          position: srcc
+        });
+        google.maps.event.addListener(marker, 'click', toggleBounce);
+
+       
+      }
+
+      function toggleBounce() {
+        if (marker.getAnimation() != null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+    </script>
+
     
   </head>
 
@@ -110,7 +271,7 @@
        <a href="https://www.reebok.com" class="varvet"><img src="images/sponsors/reebok.jpg" alt="reebok"></a>
      </div>
 
-     <p class="read-more">Read more about our wonderful <a href="sponsors.html">sponsors</a>. We couldn’t do this without them!</p>
+     <p class="read-more">Read more about our  <a href="sponsors.html">sponsors</a>.</p>
 
    </div>
  </div>
@@ -122,7 +283,7 @@
         <nav>
           <ul>
             <li><a href="speakers.html">Speakers</li>
-            <li><a href="schedule.html">Schedule</li>
+        
             <li><a href="venue.html">Venue</li>
             <li><a href="register.html">Register</a></li>
             <li><a href="sponsors.html">Sponsors</a></li>
@@ -145,8 +306,7 @@
       <p class="credits">Youth Conference © 2016 SRCC.</p>
       <ul class="other">
         <li><a href="mailto:youthconference.srcc@gmail.com">Contact</a></li>
-        <li><a href="code-of-conduct.html">Code of Conduct</a></li>
-        <li><a href="files/.pdf">Sponsorship prospectus</a></li>
+      
       </ul>
     </div>
   </div>

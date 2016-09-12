@@ -183,7 +183,7 @@ h3 {
   line-height: 120%;
   font-size: 40px;
   font-weight: 900;
-  font-style: italic;
+  /*font-style: italic;*/
   font-family: "freight-display-pro", Georgia, serif;
   -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 768px) {
@@ -202,7 +202,7 @@ h4 {
   line-height: 120%;
   font-size: 24px;
   font-weight: 900;
-  font-style: italic;
+/*  font-style: italic;*/
   font-family: "freight-display-pro", Georgia, serif;
   -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 768px) {
@@ -1033,7 +1033,7 @@ body.index #main .wrapper .inner {
         width: 458px;
         height: 333px;
         margin-left: -222px;
-        border: 3px solid #e75a2f;
+        border: 3px solid rgba(231, 90, 47, 0);
         top: -60px; } }
     @media screen and (max-width: 480px) {
       /* line 91, _home.scss */
@@ -1050,7 +1050,7 @@ body.index #main .wrapper .inner {
     display: block;
     width: 680px;
     height: 66px;
-    background-image: url("../images/word-mark%402x.png");
+    /*background-image: url("../images/word-mark%402x.png");*/
     background-size: 680px 66px;
     -webkit-animation-name: fade-in;
     -moz-animation-name: fade-in;
@@ -1064,7 +1064,7 @@ body.index #main .wrapper .inner {
         width: 340px;
         height: 33px;
         margin-left: -170px;
-        background-image: url("../images/word-mark.png");
+      /*  background-image: url("../images/word-mark.png");*/
         background-size: 340px 33px; } }
     @media screen and (max-height: 900px) {
       /* line 125, _home.scss */
@@ -1072,7 +1072,7 @@ body.index #main .wrapper .inner {
         width: 340px;
         height: 33px;
         margin-left: -170px;
-        background-image: url("../images/word-mark.png");
+       /* background-image: url("../images/word-mark.png");*/
         background-size: 340px 33px; } }
     @media screen and (max-width: 480px) {
       /* line 125, _home.scss */
@@ -2564,7 +2564,7 @@ body.sponsors #main {
     letter-spacing: .1em;
     color: rgba(255, 255, 255, 0.3);
     font-style: normal;
-    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif; }
+    font-family: "Alegreya Sans SC", "Helvetica Neue", Arial, sans-serif; }
   /* line 43, _sponsors.scss */
   .our-sponsors img {
     width: 100%;
@@ -2760,3 +2760,9 @@ body.sponsors #main {
 /* line 206, _sponsors.scss */
 .varvet img {
   max-width: 240px; }
+.alegreya {
+  font-family: "Alegreya", sans-serif !important;
+}
+.alegreyasc {
+  font-family: "Alegreya Sans Sc", Georgia !important;
+}
