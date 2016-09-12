@@ -146,10 +146,10 @@ h2 {
   margin: 0;
   padding: 60px 0 40px;
   color: #fff;
-  font-weight: 900;
+  font-weight: 6  00;
   font-size: 60px;
-  font-style: italic;
-  font-family: "freight-display-pro", Georgia, serif;
+
+  font-family: "Alegreya Sans SC", Georgia, serif;
   line-height: 100%;
   -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 768px) {
@@ -170,7 +170,7 @@ h2 {
       margin: 0;
       right: 0;
       bottom: 20px;
-      border-bottom: 3px solid #e75a2f; }
+      border-bottom: 3px solid #071426; }
   @media screen and (max-width: 480px) {
     /* line 57, _globals.scss */
     h2 {
@@ -848,9 +848,10 @@ footer {
       background-image: url("../images/facebook.svg");
       background-size: 24px 24px; }
     /* line 176, _footer.scss */
-    footer ul .lanyrd a {
-      background-image: url("../images/lanyrd.svg");
-      background-size: 20px 20px; }
+    footer ul .instagram a {
+      background-image: 
+      background-size 24px 24px; 
+    }
   /* line 182, _footer.scss */
   footer .about-organiser {
     float: left;
