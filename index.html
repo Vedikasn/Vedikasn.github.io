@@ -20,6 +20,7 @@
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
     <script src="javascripts/all.js"></script><script src="javascripts/jquery.jcountdown1.3.3.min.js"></script>
+    <script src="javascripts/typed.js"></script>
     
   </head>
 
@@ -53,14 +54,14 @@
     <div class="inner">
 
       <div class="mark">
-        <h2 class="alegreyasc">SRCC Youth Conference 2016</h2><br>
-        <img src="images/logoheader.png" alt="SRCC Youth Conference" />
+        <h2 class="alegreyasc" style="font-style: normal;"><span id="typed"></span></h2><br>
+        <img src="images/logo.png" alt="SRCC Youth Conference" />
         <div class="when-where">
           <h3>20-21 September, 2016</h3>
           <p>Shri Ram College of Commerce, New Delhi.</p>
         </div>
       </div>
-
+<br><br>
       <div class="intro">
         <p>Youth Conference is a student-to-student initiative whose objective is to stimulate the biggest (and currently latent) strength of an emerging nation, i.e. its youth. It aims to bring together distinguished people, who have carved a niche in their respective fields, to share their milestones, downfalls, struggles and successes, inspiring the aspirants to achieve beyond mediocre boundaries.</p>
       </div>
@@ -114,7 +115,7 @@
             <li>
               <span class="date">2016-09-11</span>
               <a href="blog/registration-closes-on-september-20.html">
-                <h3><em>Registration Closes on September 20th.</em></h3>
+                <h3><em>Registration Closes on September 18th.</em></h3>
               </a>
               <div class="excerpt"><p>Due to booking rules at our <a href="venue.html">venue</a> we have to close registration at the beginning of third week of september.</p>
 
@@ -211,7 +212,14 @@
 </footer>
 
     </div>
-    
+    <script>
+      $(function(){
+        $("#typed").typed({
+          strings: ["^500 SRCC Youth Conference ^1500 2016."],
+          typeSpeed: 0
+        });
+      });
+    </script>
     <script src="http://static.getclicky.com/js" type="text/javascript"></script>
     <script type="text/javascript">try{ clicky.init(100693779); }catch(e){}</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/100693779ns.gif" /></p></noscript>

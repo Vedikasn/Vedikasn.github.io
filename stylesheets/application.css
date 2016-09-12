@@ -160,9 +160,9 @@ h2 {
   /* line 74, _globals.scss */
   h2 span {
     position: relative;
-    padding-right: 44px; }
+    padding-right: 10px; }
     /* line 78, _globals.scss */
-    h2 span:after {
+ /*   h2 span:after {
       display: block;
       position: absolute;
       content: "";
@@ -170,7 +170,7 @@ h2 {
       margin: 0;
       right: 0;
       bottom: 20px;
-      border-bottom: 3px solid #071426; }
+      border-bottom: 3px solid #071426; }*/
   @media screen and (max-width: 480px) {
     /* line 57, _globals.scss */
     h2 {
@@ -2765,4 +2765,25 @@ body.sponsors #main {
 }
 .alegreyasc {
   font-family: "Alegreya Sans Sc", Georgia !important;
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
