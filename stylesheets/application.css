@@ -144,7 +144,7 @@ body {
 h2 {
   display: block;
   margin: 0;
-  padding: 60px 0 40px;
+  padding: 10px 0 40px;
   color: #fff;
   font-weight: 6  00;
   font-size: 60px;
@@ -158,9 +158,10 @@ h2 {
       font-size: 50px;
       padding: 30px 0; } }
   /* line 74, _globals.scss */
-  h2 span {
+  h2 img {
     position: relative;
-    padding-right: 10px; }
+    padding-right: 10px;
+    align-items: left; }
     /* line 78, _globals.scss */
  /*   h2 span:after {
       display: block;
@@ -306,7 +307,7 @@ strong.alert {
     margin: 0;
     padding: 8px 10px 12px;
     font-size: 24px;
-    font-family: "freight-text-pro", Georgia, serif;
+    font-family: "Alegreya", Georgia, serif;
     font-weight: 400;
     font-style: italic;
     color: rgba(255, 255, 255, 0.8);
@@ -931,9 +932,9 @@ body.index #main .wrapper .inner {
   margin: 200px 240px 80px;
   color: #fff;
   text-align: center;
-  font-weight: 400;
+  font-weight: 100;
   font-style: italic;
-  font-family: "freight-text-pro", Georgia, serif;
+  font-family: "Alegreya", Georgia, serif;
   font-size: 32px;
   line-height: 150%;
   -webkit-font-smoothing: antialiased; }
@@ -956,22 +957,22 @@ body.index #main .wrapper .inner {
 .index .mark {
   text-align: center;
   position: relative;
-  margin-top: 340px;
+  margin-top: 100px;
   color: #fff;
   font-style: italic;
   font-size: 26px;
-  font-family: "freight-text-pro", Georgia, serif;
+  font-family: "Alegreya", Georgia, serif;
   font-weight: 200;
   -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 768px) {
     /* line 35, _home.scss */
     .index .mark {
-      margin-top: 140px;
+      margin-top: 80px;
       font-size: 22px; } }
   @media screen and (max-height: 900px) {
     /* line 35, _home.scss */
     .index .mark {
-      margin-top: 140px;
+      margin-top: 80px;
       font-size: 22px; } }
   @media screen and (max-width: 480px) {
     /* line 35, _home.scss */
@@ -1359,7 +1360,7 @@ body.index #main .wrapper .inner {
     text-transform: none;
     letter-spacing: normal;
     font-weight: 400;
-    font-family: "freight-text-pro", Georgia, serif;
+    font-family: "Alegreya", Georgia, serif;
     font-style: italic;
     font-size: 26px; }
     @media screen and (max-width: 768px) {
@@ -1578,7 +1579,7 @@ body.speakers #main {
   /* line 69, _speakers.scss */
   .speaker .biography {
     margin-bottom: 1em;
-    font-family: "freight-text-pro", Georgia, serif;
+    font-family: "Alegreya", Georgia, serif;
     font-style: italic;
     font-size: 20px; }
   /* line 78, _speakers.scss */
